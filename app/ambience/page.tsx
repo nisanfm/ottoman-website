@@ -152,7 +152,7 @@ const [menuOpen, setMenuOpen] = useState(false);
         
         <div className="relative z-10 max-w-4xl">
         <img
-          src="/logokotak.JPG"
+          src="/logokotak.jpg"
           alt="Ottoman Logo"
           className="h-50 object-contain mx-auto mb-8 opacity-100"
         />
