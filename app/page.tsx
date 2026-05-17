@@ -108,7 +108,7 @@ export default function Home() {
             </a>
 
              <p className="text-sm text-gray-500 mt-1">
-               Indoor dining, VIP room, and lakeside terrace
+               Indoor dining, VIP room, and lakeside terrace.
              </p>
           </div>
 
