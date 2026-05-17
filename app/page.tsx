@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Camera, MapPin, MessageCircle } from "lucide-react";
 const images = [
-  "/hero1.jpg",
-  "/hero2.jpg",
-  "/hero3.jpg",
-  "/hero4.jpg",
-  "/hero5.jpg",
+  "/hero11.jpg",
+  "/hero22.jpg",
+  "/hero33.jpg",
+  "/hero44.jpg",
+  "/hero55.jpg",
 ];
 
 export default function Home() {
@@ -163,7 +163,7 @@ export default function Home() {
       <section className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6">
 
         <img
-          src="/logokotak.jpg"
+          src="/logokotaknew.jpg"
           alt="Ottoman Logo"
           className="h-50 object-contain mb-6 opacity-90"
 />
@@ -228,7 +228,7 @@ export default function Home() {
     <div className="bg-[#1B2A24] rounded-[30px] overflow-hidden">
 
       <img
-        src="/indoor.jpg"
+        src="/indoorr.jpg"
         alt="Indoor Dining"
         className="h-80 w-full object-cover"
       />
@@ -272,7 +272,7 @@ export default function Home() {
     <div className="bg-[#1B2A24] rounded-[30px] overflow-hidden">
 
       <img
-        src="/outdoor.jpg"
+        src="/outdoornew.jpg"
         alt="Lakeside Terrace"
         className="h-80 w-full object-cover"
       />
@@ -335,7 +335,7 @@ export default function Home() {
       </div>
 
       <img
-        src="/croissant.jpg"
+        src="/croissantnew.jpg"
         alt="Croissant Sandwich"
         className="order-1 md:order-2 w-full h-[340px] object-cover rounded-[30px]"
       />
@@ -395,7 +395,7 @@ export default function Home() {
       </div>
 
       <img
-        src="/ayamkremes.jpg"
+        src="/ayamkremesnew.jpg"
         alt="Nasi Daun Jeruk Ayam Kremes Signature"
         className="order-1 md:order-2 w-full h-[340px] object-cover rounded-[30px]"
       />
@@ -406,7 +406,7 @@ export default function Home() {
     <div className="grid md:grid-cols-2 gap-12 items-center">
 
       <img
-        src="/tomahawk.jpg"
+        src="/tomahawknew.jpg"
         alt="Tomahawk"
         className="w-full h-[340px] object-cover rounded-[30px]"
       />

@@ -175,7 +175,7 @@ export default function GalleryPage() {
         <div className="relative z-10 max-w-3xl">
 
           <img
-            src="/logokotak.jpg"
+            src="/logokotaknew.jpg"
             alt="Ottoman Logo"
             className="h-50 object-contain mx-auto mb-8 opacity-90"
           />
@@ -331,7 +331,7 @@ export default function GalleryPage() {
 />
 
    <motion.img
-  src="/ambiencehero.JPG"
+  src="/ambienceheronew.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -340,7 +340,7 @@ export default function GalleryPage() {
 />
 
     <motion.img
-  src="/ayamkremes.JPG"
+  src="/ayamkremesnew.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -349,7 +349,7 @@ export default function GalleryPage() {
 />
 
     <motion.img
-  src="/bakmi.JPG"
+  src="/bakminew.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -358,7 +358,7 @@ export default function GalleryPage() {
 />
 
     <motion.img
-  src="/bakmio.jpg"
+  src="/bakmionew.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -367,7 +367,7 @@ export default function GalleryPage() {
 />
 
     <motion.img
-  src="/croissant.jpg"
+  src="/croissantnew.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -376,7 +376,7 @@ export default function GalleryPage() {
 />
 
     <motion.img
-  src="/eggben.jpg"
+  src="/eggbennew.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -385,7 +385,7 @@ export default function GalleryPage() {
 />
 
     <motion.img
-  src="/englishb.JPG"
+  src="/englishbnew.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -394,7 +394,7 @@ export default function GalleryPage() {
 />
 
     <motion.img
-  src="/mushroom.JPG"
+  src="/mushroomnew.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -403,7 +403,7 @@ export default function GalleryPage() {
 />
 
     <motion.img
-  src="/omelete.JPG"
+  src="/omeletenew.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -412,7 +412,7 @@ export default function GalleryPage() {
 />
 
     <motion.img
-  src="/outdoor.JPG"
+  src="/outdoornew.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -421,7 +421,7 @@ export default function GalleryPage() {
 />
 
     <motion.img
-  src="/salad.JPG"
+  src="/saladnew.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}

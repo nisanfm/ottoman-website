@@ -142,7 +142,7 @@ const [menuOpen, setMenuOpen] = useState(false);
       <section className="relative min-h-screen flex items-center justify-center text-center px-8 overflow-hidden">
 
         <img
-          src="/ambiencehero.jpg"
+          src="/ambienceheronew.jpg"
           alt="Ottoman Ambience"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -152,7 +152,7 @@ const [menuOpen, setMenuOpen] = useState(false);
         
         <div className="relative z-10 max-w-4xl">
         <img
-          src="/logokotak.jpg"
+          src="/logokotaknew.jpg"
           alt="Ottoman Logo"
           className="h-50 object-contain mx-auto mb-8 opacity-100"
         />

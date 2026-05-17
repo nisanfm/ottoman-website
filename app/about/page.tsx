@@ -180,7 +180,7 @@ const [activeReview, setActiveReview] = useState(0);
         <div className="relative z-10 max-w-3xl">
 
           <img
-            src="/logokotak.jpg"
+            src="/logokotaknew.jpg"
             alt="Ottoman Logo"
             className="h-50 object-contain mx-auto mb-8 opacity-90"
           />

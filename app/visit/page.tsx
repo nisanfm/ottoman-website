@@ -146,7 +146,7 @@ export default function VisitPage() {
       <section className="relative min-h-screen flex items-center justify-center text-center px-8 overflow-hidden">
 
         <img
-          src="/hero1.jpg"
+          src="/hero11.jpg"
           alt="Visit Ottoman"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -156,7 +156,7 @@ export default function VisitPage() {
         <div className="relative z-10 max-w-3xl">
 
           <img
-            src="/logokotak.jpg"
+            src="/logokotaknew.jpg"
             alt="Ottoman Logo"
             className="h-24 object-contain mx-auto mb-8 opacity-90"
           />

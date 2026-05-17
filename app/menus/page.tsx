@@ -4,16 +4,16 @@ import { useEffect, useState } from "react";
 import { Camera, MapPin, MessageCircle } from "lucide-react";
 
 const menuImages = [
-  "/bakmi.jpg",
-  "/bakmio.jpg",
-  "/croissant.jpg",
-  "/eggben.jpg",
-  "/englishb.jpg",
-  "/kaya.jpg",
-  "/mushroom.jpg",
-  "/omelete.jpg",
-  "/salad.jpg",
-  "/tomahawk.jpg",
+  "/bakminew.jpg",
+  "/bakmionew.jpg",
+  "/croissantnew.jpg",
+  "/eggbennew.jpg",
+  "/englishbnew.jpg",
+  "/kayanew.jpg",
+  "/mushroomnew.jpg",
+  "/omeletenew.jpg",
+  "/saladnew.jpg",
+  "/tomahawknew.jpg",
 ];
 
 export default function MenusPage() {
@@ -1406,52 +1406,52 @@ buttery finish, served with your choice of signature sauce.
   <div className="flex gap-6 overflow-x-auto pb-4">
 
     <img
-  src="/tomahawk.jpg"
+  src="/tomahawknew.jpg"
   className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
 />
 
 <img
-  src="/salad.jpg"
+  src="/saladnew.jpg"
   className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
 />
 
 <img
-  src="/omelete.jpg"
+  src="/omeletenew.jpg"
   className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
 />
 
 <img
-  src="/mushroom.jpg"
+  src="/mushroomnew.jpg"
   className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
 />
 
 <img
-  src="/kaya.jpg"
+  src="/kayanew.jpg"
   className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
 />
 
 <img
-  src="/englishb.jpg"
+  src="/englishbnew.jpg"
   className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
 />
 
 <img
-  src="/eggben.jpg"
+  src="/eggbennew.jpg"
   className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
 />
 
 <img
-  src="/croissant.jpg"
+  src="/croissantnew.jpg"
   className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
 />
 
 <img
-  src="/bakmio.jpg"
+  src="/bakmionew.jpg"
   className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
 />
 
 <img
-  src="/bakmi.jpg"
+  src="/bakminew.jpg"
   className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
 />
 
