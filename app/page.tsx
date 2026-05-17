@@ -163,7 +163,7 @@ export default function Home() {
       <section className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6">
 
         <img
-          src="/logokotak.JPG"
+          src="/logokotak.jpg"
           alt="Ottoman Logo"
           className="h-50 object-contain mb-6 opacity-90"
 />
