@@ -250,7 +250,7 @@ export default function Home() {
     <div className="bg-[#1B2A24] rounded-[30px] overflow-hidden">
 
       <img
-        src="/hero3.jpg"
+        src="/vip.jpg"
         alt="VIP Room"
         className="h-80 w-full object-cover"
       />
@@ -395,7 +395,7 @@ export default function Home() {
       </div>
 
       <img
-        src="/ayamkremesnew.jpg"
+        src="/ayamkremesneww.jpg"
         alt="Nasi Daun Jeruk Ayam Kremes Signature"
         className="order-1 md:order-2 w-full h-[340px] object-cover rounded-[30px]"
       />
