@@ -346,7 +346,7 @@ export default function Home() {
     <div className="grid md:grid-cols-2 gap-12 items-center">
 
       <img
-        src="/bakmi.jpg"
+        src="/bakminew.jpg"
         alt="Curry Bakmi"
         className="w-full h-[340px] object-cover rounded-[30px]"
       />
