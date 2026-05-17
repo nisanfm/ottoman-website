@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { Camera, MapPin, MessageCircle } from "lucide-react";
 
 export default function AboutPage() {
@@ -32,8 +33,15 @@ export default function AboutPage() {
 
 const [activeReview, setActiveReview] = useState(0);
 
-  return (
-    <main className="bg-black text-white overflow-hidden">
+return (
+  <motion.main
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.8 }}
+    className="bg-black text-white"
+  >
+
+);
 
         {/* NAVBAR */}
 <nav className="fixed top-0 left-0 w-full z-50 grid grid-cols-3 items-center px-8 py-4 bg-black/20 backdrop-blur-sm">
@@ -516,5 +524,5 @@ const [activeReview, setActiveReview] = useState(0);
 
 </footer>
 
-</main> 
+</motion.main> 
 ); }

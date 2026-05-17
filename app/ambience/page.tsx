@@ -1,11 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Camera, MapPin, MessageCircle } from "lucide-react";
 export default function AmbiencePage() {
 const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <main className="bg-black text-white overflow-hidden">
+  <motion.main
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.8 }}
+    className="bg-black text-white"
+  >
+
+);
 
 {/* NAVBAR */}
 <nav className="fixed top-0 left-0 w-full z-50 grid grid-cols-3 items-center px-8 py-4 bg-black/20 backdrop-blur-sm">
@@ -207,25 +215,31 @@ const [menuOpen, setMenuOpen] = useState(false);
 
   <div className="grid md:grid-cols-3 gap-6">
 
+  <div className="overflow-hidden rounded-[30px]">
     <img
       src="/indoor1.jpg"
       alt="Indoor Dining"
-      className="h-[500px] w-full object-cover rounded-[30px]"
+      className="h-[500px] w-full object-cover transition duration-500 hover:scale-105"
     />
+  </div>
 
+  <div className="overflow-hidden rounded-[30px]">
     <img
       src="/indoor2.jpg"
       alt="Indoor Dining"
-      className="h-[500px] w-full object-cover rounded-[30px]"
+      className="h-[500px] w-full object-cover transition duration-500 hover:scale-105"
     />
+  </div>
 
+  <div className="overflow-hidden rounded-[30px]">
     <img
       src="/indoor3.jpg"
       alt="Indoor Dining"
-      className="h-[500px] w-full object-cover rounded-[30px]"
+      className="h-[500px] w-full object-cover transition duration-500 hover:scale-105"
     />
-
   </div>
+
+</div>
 
 </section>
 {/* VIP ROOM */}
@@ -269,30 +283,39 @@ const [menuOpen, setMenuOpen] = useState(false);
 
   <div className="grid md:grid-cols-4 gap-4">
 
+  <div className="overflow-hidden rounded-[30px]">
     <img
       src="/lake1.jpg"
       alt="Lakeside Terrace"
-      className="h-[350px] w-full object-cover rounded-[30px]"
+      className="h-[350px] w-full object-cover transition duration-500 hover:scale-105"
     />
+  </div>
 
+  <div className="overflow-hidden rounded-[30px]">
     <img
       src="/lake2.jpg"
       alt="Lakeside Terrace"
-      className="h-[350px] w-full object-cover rounded-[30px]"
+      className="h-[350px] w-full object-cover transition duration-500 hover:scale-105"
     />
+  </div>
 
+  <div className="overflow-hidden rounded-[30px]">
     <img
       src="/lake3.jpg"
       alt="Lakeside Terrace"
-      className="h-[350px] w-full object-cover rounded-[30px]"
+      className="h-[350px] w-full object-cover transition duration-500 hover:scale-105"
     />
-
-    <img
-       src="/lake4.jpg"
-       alt="Lakeside Terrace"
-       className="h-[350px] w-full object-cover rounded-[30px]"
-/>
   </div>
+
+  <div className="overflow-hidden rounded-[30px]">
+    <img
+      src="/lake4.jpg"
+      alt="Lakeside Terrace"
+      className="h-[350px] w-full object-cover transition duration-500 hover:scale-105"
+    />
+  </div>
+
+</div>
 
 </section>
 {/* ATMOSPHERE GALLERY */}
@@ -310,57 +333,147 @@ const [menuOpen, setMenuOpen] = useState(false);
 
   </div>
 
-  <div className="flex gap-6 overflow-x-auto pb-4">
+  <div className="flex gap-6 w-max animate-marquee">
 
-    <img
-  src="/gallery1.jpg"
-  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
-/>
+    <div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery1.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
 
-<img
-  src="/gallery2.jpg"
-  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
-/>
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery2.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
 
-<img
-  src="/gallery3.jpg"
-  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
-/>
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery3.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
 
-<img
-  src="/gallery4.jpg"
-  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
-/>
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery4.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
 
-<img
-  src="/gallery5.jpg"
-  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
-/>
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery5.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
 
-<img
-  src="/gallery6.jpg"
-  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
-/>
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery6.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
 
-<img
-  src="/gallery7.jpg"
-  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
-/>
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery7.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
 
-<img
-  src="/gallery8.jpg"
-  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
-/>
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery8.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
 
-<img
-  src="/gallery9.jpg"
-  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
-/>
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery9.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
 
-<img
-  src="/gallery10.jpg"
-  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
-/>
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery10.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
+
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery1.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
+
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery2.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
+
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery3.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
+
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery4.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
+
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery5.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
+
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery6.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
+
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery7.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
+
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery8.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
+
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery9.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
+
+<div className="overflow-hidden rounded-[30px]">
+  <img
+    src="/gallery10.jpg"
+    className="h-[420px] min-w-[320px] object-cover transition duration-500 hover:scale-105"
+  />
+</div>
 
   </div>
 
@@ -508,6 +621,6 @@ const [menuOpen, setMenuOpen] = useState(false);
   </div>
 
 </footer>
-    </main>
+    </motion.main>
   );
 }

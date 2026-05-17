@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { Camera, MapPin, MessageCircle } from "lucide-react";
 
 const menuImages = [
   "/bakminew.jpg",
-  "/bakmionew.jpg",
+  "/orientalbakmi.jpg",
   "/croissantnew.jpg",
   "/eggbennew.jpg",
   "/englishbnew.jpg",
@@ -29,7 +30,12 @@ export default function MenusPage() {
   }, []);
 
   return (
-    <main className="relative bg-[#0A0A0A] text-white min-h-screen overflow-hidden">
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="relative bg-[#0A0A0A] text-white min-h-screen overflow-hidden"
+    >
 
       {/* NAVBAR */}
       <nav className="fixed top-0 left-0 w-full z-50 grid grid-cols-3 items-center px-8 py-2 backdrop-blur-sm bg-black/20 border-b border-[#B89B5E]/10">
@@ -1403,7 +1409,7 @@ buttery finish, served with your choice of signature sauce.
 
   </div>
 
-  <div className="flex gap-6 overflow-x-auto pb-4">
+  <div className="flex gap-6 w-max animate-marquee">
 
     <img
   src="/tomahawknew.jpg"
@@ -1446,7 +1452,57 @@ buttery finish, served with your choice of signature sauce.
 />
 
 <img
-  src="/bakmionew.jpg"
+  src="/orientalbakmi.jpg"
+  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
+/>
+
+<img
+  src="/bakminew.jpg"
+  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
+/>
+
+<img
+  src="/tomahawknew.jpg"
+  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
+/>
+
+<img
+  src="/saladnew.jpg"
+  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
+/>
+
+<img
+  src="/omeletenew.jpg"
+  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
+/>
+
+<img
+  src="/mushroomnew.jpg"
+  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
+/>
+
+<img
+  src="/kayanew.jpg"
+  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
+/>
+
+<img
+  src="/englishbnew.jpg"
+  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
+/>
+
+<img
+  src="/eggbennew.jpg"
+  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
+/>
+
+<img
+  src="/croissantnew.jpg"
+  className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
+/>
+
+<img
+  src="/orientalbakmi.jpg"
   className="h-[420px] min-w-[320px] object-cover rounded-[30px]"
 />
 
@@ -1560,6 +1616,6 @@ buttery finish, served with your choice of signature sauce.
   </div>
 
 </footer>
-    </main>
+    </motion.main>
   );
 }

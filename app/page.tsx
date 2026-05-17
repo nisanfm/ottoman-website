@@ -15,16 +15,58 @@ export default function Home() {
   const [currentImage, setCurrentImage] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // LOADING SCREEN
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 6500);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
+  // SHOW LOADING SCREEN
+if (loading) {
   return (
-    <main className="relative bg-black text-white">
+    <motion.div
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.8 }}
+      className="fixed inset-0 bg-[#0A0F0D] flex items-center justify-center z-[999]"
+    >
+
+      <motion.img
+        src="/logokotaknew.jpg"
+        alt="Ottoman Logo"
+        initial={{ opacity: 0, scale: 0.96 }}
+        animate={{ opacity: 0.9, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="w-32"
+      />
+
+    </motion.div>
+  );
+}
+
+  return (
+  <motion.main
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.8 }}
+    className="bg-black text-white"
+  >
+
+);
       {/* BACKGROUND SLIDESHOW */}
       {images.map((image, index) => (
         <div
@@ -42,7 +84,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-black/50" />
 
       {/* NAVBAR */}
-      <nav className="sticky top-0 z-40 grid grid-cols-3 items-center px-8 py-1 backdrop-blur-sm bg-black/10 border-b border-white/5">
+      <nav className="fixed top-0 left-0 right-0 z-40 grid grid-cols-3 items-center px-8 py-1 backdrop-blur-sm bg-black/10 border-b border-white/5">
 
         <button
           onClick={() => setMenuOpen(true)}
@@ -199,6 +241,8 @@ export default function Home() {
         </div>
 
       </section>
+
+      
 {/* EXPERIENCE SECTION */}
 <motion.section
    id="experience"
@@ -316,7 +360,15 @@ export default function Home() {
     {/* CROISSANT */}
     <div className="grid md:grid-cols-2 gap-12 items-center">
 
-      <div className="order-2 md:order-1">
+      <div className="overflow-hidden rounded-[30px]">
+        <img
+          src="/croissantnew.jpg"
+          alt="Croissant Sandwich"
+          className="w-full h-[340px] object-cover transition duration-500 hover:scale-105"
+        />
+      </div>
+
+      <div>
 
         <p className="tracking-[0.3em] text-sm text-[#5C7A6D] mb-4">
           BREAKFAST SELECTION
@@ -334,22 +386,10 @@ export default function Home() {
 
       </div>
 
-      <img
-        src="/croissantnew.jpg"
-        alt="Croissant Sandwich"
-        className="order-1 md:order-2 w-full h-[340px] object-cover rounded-[30px]"
-      />
-
     </div>
 
     {/* CURRY BAKMI */}
     <div className="grid md:grid-cols-2 gap-12 items-center">
-
-      <img
-        src="/bakminew.jpg"
-        alt="Curry Bakmi"
-        className="w-full h-[340px] object-cover rounded-[30px]"
-      />
 
       <div>
 
@@ -369,12 +409,28 @@ export default function Home() {
 
       </div>
 
+      <div className="overflow-hidden rounded-[30px]">
+        <img
+          src="/bakminew.jpg"
+          alt="Curry Bakmi"
+          className="w-full h-[340px] object-cover transition duration-500 hover:scale-105"
+        />
+      </div>
+
     </div>
 
     {/* AYAM KREMES */}
     <div className="grid md:grid-cols-2 gap-12 items-center">
 
-      <div className="order-2 md:order-1">
+      <div className="overflow-hidden rounded-[30px]">
+        <img
+          src="/ayamkremesneww.jpg"
+          alt="Nasi Daun Jeruk Ayam Kremes Signature"
+          className="w-full h-[340px] object-cover transition duration-500 hover:scale-105"
+        />
+      </div>
+
+      <div>
 
         <p className="tracking-[0.3em] text-sm text-[#5C7A6D] mb-4">
           INDONESIAN SIGNATURE
@@ -394,22 +450,10 @@ export default function Home() {
 
       </div>
 
-      <img
-        src="/ayamkremesneww.jpg"
-        alt="Nasi Daun Jeruk Ayam Kremes Signature"
-        className="order-1 md:order-2 w-full h-[340px] object-cover rounded-[30px]"
-      />
-
     </div>
 
     {/* TOMAHAWK */}
     <div className="grid md:grid-cols-2 gap-12 items-center">
-
-      <img
-        src="/tomahawknew.jpg"
-        alt="Tomahawk"
-        className="w-full h-[340px] object-cover rounded-[30px]"
-      />
 
       <div>
 
@@ -429,11 +473,20 @@ export default function Home() {
 
       </div>
 
+      <div className="overflow-hidden rounded-[30px]">
+        <img
+          src="/tomahawknew.jpg"
+          alt="Tomahawk"
+          className="w-full h-[340px] object-cover transition duration-500 hover:scale-105"
+        />
+      </div>
+
     </div>
 
   </div>
 
 </section>
+
 
 {/* FOOTER */}
 <footer className="relative z-10 bg-[#0A0F0D] px-8 py-10 border-t border-[#B89B5E]/10">
@@ -535,6 +588,6 @@ export default function Home() {
   </div>
 
 </footer>
-    </main>
+    </motion.main>
   );
 }

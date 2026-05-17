@@ -9,7 +9,12 @@ export default function GalleryPage() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <main className="bg-black text-white overflow-hidden">
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="bg-black text-white overflow-hidden"
+    >
 
       {/* NAVBAR */}
       <nav className="fixed top-0 left-0 w-full z-50 grid grid-cols-3 items-center px-8 py-4 bg-black/20 backdrop-blur-sm">
@@ -358,7 +363,7 @@ export default function GalleryPage() {
 />
 
     <motion.img
-  src="/bakmionew.jpg"
+  src="/orientalbakmi.jpg"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -543,6 +548,6 @@ export default function GalleryPage() {
 
 </footer>
 
-    </main>
+    </motion.main>
   );
 }
