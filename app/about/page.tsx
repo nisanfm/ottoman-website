@@ -63,8 +63,7 @@ return (
 
   <div className="justify-self-end">
     <a
-      href="https://wa.me/628978242070"
-      target="_blank"
+      href="/visit#reservation""
       className="border border-white px-5 py-2 rounded-full text-sm hover:bg-[#B89B5E] hover:text-black transition"
     >
       RESERVE
@@ -157,7 +156,7 @@ return (
 
       <div>
         <a
-          href="/visit"
+          href="/visit#reservation"
           onClick={() => setMenuOpen(false)}
           className="text-3xl font-serif text-[#B89B5E] hover:text-white transition"
         >

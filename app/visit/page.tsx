@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import ReservationSection from "@/components/ReservationSection";
 import { Camera, MessageCircle, MapPin } from "lucide-react";
 
 export default function VisitPage() {
@@ -36,8 +37,7 @@ export default function VisitPage() {
 
         <div className="justify-self-end">
           <a
-            href="https://wa.me/628978242070"
-            target="_blank"
+            href="/visit#reservation"
             className="border border-white px-5 py-2 rounded-full text-sm hover:bg-[#B89B5E] hover:text-black transition"
           >
             RESERVE
@@ -131,7 +131,7 @@ export default function VisitPage() {
 
       <div>
         <a
-          href="/visit"
+          href="/visit#reservation"
           onClick={() => setMenuOpen(false)}
           className="text-3xl font-serif text-[#B89B5E] hover:text-white transition"
         >
@@ -252,8 +252,7 @@ export default function VisitPage() {
       <div className="flex flex-wrap gap-6 mt-14">
 
         <a
-          href="https://wa.me/628978242070"
-          target="_blank"
+         href="/visit#reservation"
           className="bg-[#E5D3A1] text-black hover:bg-white transition px-8 py-4 rounded-full tracking-[0.2em] text-sm uppercase shadow-[0_0_30px_rgba(229,211,161,0.25)]"
         >
           Reserve Now
@@ -349,6 +348,8 @@ export default function VisitPage() {
   </div>
 
 </section>
+
+<ReservationSection />
 
 {/* FOOTER */}
 <footer className="relative z-10 bg-[#0A0F0D] px-8 py-10 border-t border-[#B89B5E]/10">

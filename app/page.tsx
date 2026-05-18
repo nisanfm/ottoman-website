@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import ReservationSection from "@/components/ReservationSection";
 import { Camera, MapPin, MessageCircle } from "lucide-react";
 const images = [
   "/hero11.jpg",
@@ -66,7 +67,6 @@ if (loading) {
     className="bg-black text-white"
   >
 
-);
       {/* BACKGROUND SLIDESHOW */}
       {images.map((image, index) => (
         <div
@@ -103,8 +103,7 @@ if (loading) {
 
         <div className="justify-self-end">
           <a
-          href="https://wa.me/628978242070"
-          target="_blank"
+          href="#reservation"
           className="border border-white px-5 py-2 rounded-full text-sm hover:bg-[#B89B5E] hover:text-black transition"
           >
             RESERVE
@@ -231,8 +230,7 @@ if (loading) {
         </a>
 
           <a
-            href="https://wa.me/628978242070"
-            target="_blank"
+            href="#reservation"
             className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition"
          >
            Reserve
@@ -487,6 +485,7 @@ if (loading) {
 
 </section>
 
+<ReservationSection />
 
 {/* FOOTER */}
 <footer className="relative z-10 bg-[#0A0F0D] px-8 py-10 border-t border-[#B89B5E]/10">
@@ -588,6 +587,7 @@ if (loading) {
   </div>
 
 </footer>
+
     </motion.main>
   );
 }

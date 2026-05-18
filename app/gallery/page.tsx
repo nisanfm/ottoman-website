@@ -36,8 +36,7 @@ export default function GalleryPage() {
 
         <div className="justify-self-end">
           <a
-            href="https://wa.me/628978242070"
-            target="_blank"
+            href="/visit#reservation"
             className="border border-white px-5 py-2 rounded-full text-sm hover:bg-[#B89B5E] hover:text-black transition"
           >
             RESERVE

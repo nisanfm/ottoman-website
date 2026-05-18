@@ -35,8 +35,7 @@ const [menuOpen, setMenuOpen] = useState(false);
 
   <div className="justify-self-end">
     <a
-      href="https://wa.me/628978242070"
-      target="_blank"
+      href="/visit#reservation"
       className="border border-white px-5 py-2 rounded-full text-sm hover:bg-[#B89B5E] hover:text-black transition"
     >
       RESERVE
@@ -184,8 +183,7 @@ const [menuOpen, setMenuOpen] = useState(false);
           </p>
 
           <a
-            href="https://wa.me/628978242070"
-            target="_blank"
+            href="/visit#reservation"
             className="inline-block bg-[#1D3B34] hover:bg-[#B89B5E] hover:text-black transition px-8 py-4 rounded-full tracking-[0.2em] text-sm uppercase"
           >
             Book A Table
@@ -509,8 +507,7 @@ const [menuOpen, setMenuOpen] = useState(false);
       </a>
 
       <a
-        href="https://wa.me/628978242070"
-        target="_blank"
+        href="/visit#reservation"
         className="bg-[#1D3B34] hover:bg-[#B89B5E] hover:text-black transition px-8 py-4 rounded-full tracking-[0.2em] text-sm uppercase"
       >
         Reserve Now
