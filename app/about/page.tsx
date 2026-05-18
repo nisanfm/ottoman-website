@@ -63,7 +63,7 @@ return (
 
   <div className="justify-self-end">
     <a
-      href="/visit#reservation""
+      href="/visit#reservation"
       className="border border-white px-5 py-2 rounded-full text-sm hover:bg-[#B89B5E] hover:text-black transition"
     >
       RESERVE
