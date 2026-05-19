@@ -241,7 +241,7 @@ export default function VisitPage() {
           </p>
 
           <p className="leading-[2]">
-            WhatsApp Reservation
+            WhatsApp FAQ
             <br />
             +62 897-8242-070
           </p>
